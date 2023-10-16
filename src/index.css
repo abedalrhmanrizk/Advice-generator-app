@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background: var(--dark-blue);
+  text-align: center;
+  margin-top: 223px;
+}
+
+main {
+  max-width: 540px;
+  min-height: 332px;
+  border-radius: 15px;
+  background: var(--dark-grayish-blue);
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  padding: 4.8rem;
+  position: relative;
+  margin-inline: auto;
+}
+
+h6 {
+  color: var(--neon-green);
+
+  /* Heading */
+  font-size: 1.3rem;
+  letter-spacing: 4.086px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--light-cyan);
+  font-size: 2.8rem;
+  letter-spacing: -0.3px;
+  margin-bottom: 48px;
+}
+
+h2 {
+  color: var(--light-cyan);
+}
+svg,
+img {
+  max-width: 100%;
+}
+
+svg {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 1.6rem;
+  }
+}
+
+.divider-mobile {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  svg:hover {
+    box-shadow: 0px 0px 40px 0px #53ffaa;
+  }
+}
+
+@media (max-width: 375px) {
+  .divider-desktop {
+    display: none;
+  }
+
+  .divider-mobile {
+    display: block;
+  }
+}
